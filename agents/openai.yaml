@@ -1,0 +1,4 @@
+interface:
+  display_name: "Workbook Decision Review"
+  short_description: "Turn workbooks and reviewer feedback into decision-ready outputs"
+  default_prompt: "Use this skill when I send a workbook, reviewer comments, or revised output and need you to inspect files first, ask only blocker questions, preserve source evidence, produce a decision-ready workbook, or evolve the method from durable feedback."
