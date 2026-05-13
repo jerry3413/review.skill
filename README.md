@@ -1,5 +1,7 @@
 # Workbook Decision Review Skill
 
+Language: English | [中文](README.zh-CN.md)
+
 This Codex skill helps turn Chinese product/workbook materials into decision-ready outputs. It is designed for symptom lists, requirement lists, competitive analysis sheets, reviewer comment exports, and revised workbooks.
 
 ## What It Does
