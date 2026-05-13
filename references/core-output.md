@@ -133,6 +133,8 @@ Default sort order:
 ## Formatting Defaults
 
 - Keep one idea per cell when possible.
+- Main-table cells must optimize for scanability: use one sentence when possible, 1-2 lines by default, and no background explanation unless it changes the decision.
+- If `issue + evidence + next step` can be expressed directly, do not split it into multiple explanatory sentences.
 - Use compact multi-line cells only when a row needs evidence + judgment + next step.
 - Keep count and percentage formats consistent.
 - Use visual emphasis to support scanning, not decoration.
