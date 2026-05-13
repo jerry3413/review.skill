@@ -10,6 +10,7 @@ This is a general AI agent methodology package for reviewing spreadsheets, workb
 - Asks only blocker questions instead of long intake questionnaires
 - Preserves source evidence such as original values, comments, counts, dates, versions, labels, and source rows
 - Chooses the right output mode: issues and recommendations, action plan, diagnosis sheet, evidence appendix, or improved workbook
+- In review mode, outputs both an overall judgment and locatable detailed findings, ideally tied to sheet, row, column, cell, or range
 - Applies stricter rules for evidence口径, dedupe, time/version ranges, source traceability, and uncertainty
 - Evolves from durable reviewer feedback without turning one-off wording changes into permanent rules
 

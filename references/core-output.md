@@ -11,20 +11,31 @@ Use when the user asks for review, critique, "怎么看", "有什么问题", or 
 Format:
 
 ```text
-问题：
-- [P1/P2/P3] issue, evidence, why it matters
+总体判断：
+- one short paragraph or 2-3 bullets explaining the main pattern
+
+细项问题：
+- [P1/P2/P3] Location: sheet/row/column/cell or affected range; issue; evidence; recommendation
 
 风险：
 - consequence if unchanged
 
-建议：
+总体建议：
 - concrete change
 
 是否建议修改：
 - yes/no and reason
 ```
 
-Lead with the highest-impact problems. Do not bury the answer in background.
+Lead with the highest-impact pattern, then give detailed findings. Do not bury the answer in background. The overall judgment explains the pattern; detailed findings identify the fix points.
+
+Detailed findings must be actionable and locatable:
+
+- Include sheet + row, column, cell, or affected range when workbook files are available.
+- If the issue is structural and spans many rows, name the sheet, field, and repeated pattern.
+- If only a screenshot or text excerpt is available, use the visible field name, item name, or quoted cell text as the location clue.
+- If location cannot be known from the available material, say `位置待确认` and explain what is missing.
+- Avoid only giving global critique; every major critique should point to where the user can fix it.
 
 ### Executive Summary
 

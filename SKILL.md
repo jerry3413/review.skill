@@ -55,18 +55,24 @@ If any answer cannot be supported, mark uncertainty instead of fabricating certa
 When the user asks "怎么看", "有什么问题", "给建议", or "review", do not edit first. Output:
 
 ```text
-问题：
+总体判断：
 - ...
+
+细项问题：
+- [P1/P2/P3] 位置：sheet/row/column/cell；问题；证据；建议
 
 风险：
 - ...
 
-建议：
+总体建议：
 - ...
 
 是否建议修改：
 - 是/否，原因
 ```
+
+If workbook files are available, every detailed issue must include a location such as sheet + row, column, cell, or affected range. If a finding is structural and cannot map to one cell, name the affected sheet, field, or pattern.
+Never return only an overall judgment when there are substantive issues. Use the overall judgment for the main pattern; use detailed issues to show exactly where and how to fix.
 
 ## Writing Standard
 
