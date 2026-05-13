@@ -2,7 +2,7 @@
 
 Language: English | [中文](README.zh-CN.md)
 
-This Codex skill helps turn Chinese product/workbook materials into decision-ready outputs. It is designed for symptom lists, requirement lists, competitive analysis sheets, reviewer comment exports, and revised workbooks.
+This is a general AI agent instruction package for turning Chinese product/workbook materials into decision-ready outputs. It is designed for symptom lists, requirement lists, competitive analysis sheets, reviewer comment exports, and revised workbooks.
 
 ## What It Does
 
@@ -18,8 +18,6 @@ This Codex skill helps turn Chinese product/workbook materials into decision-rea
 ```text
 workbook-decision-review/
 ├── SKILL.md
-├── agents/
-│   └── openai.yaml
 └── references/
     ├── question-gate.md
     ├── output-shapes.md
@@ -29,22 +27,21 @@ workbook-decision-review/
     └── feedback-patterns.md
 ```
 
-`SKILL.md` stays short and acts as the trigger, workflow, and hard-constraint layer. Detailed rules are split into `references/` so Codex loads only what is needed for the current task.
+`SKILL.md` stays short and acts as the trigger, workflow, and hard-constraint layer. Detailed rules are split into `references/` so an agent can load only what is needed for the current task.
 
 ## Installation
 
-Clone or copy this folder into your Codex skills directory:
+Clone or copy this repository anywhere your agent can read.
 
 ```bash
-mkdir -p ~/.codex/skills
-git clone https://github.com/jerry3413/review.skill.git ~/.codex/skills/workbook-decision-review
+git clone https://github.com/jerry3413/review.skill.git
 ```
 
-Restart Codex after installation so the skill can be discovered.
+For any AI agent, provide `SKILL.md` as the entry instruction and allow it to read files under `references/` on demand. If your platform has a skill/plugin directory, place this folder there and keep the same structure.
 
 ## Usage
 
-Use it when asking Codex to work on a spreadsheet or workbook such as:
+Use it when asking an AI agent to work on a spreadsheet or workbook such as:
 
 ```text
 用 workbook-decision-review 处理这个体征表，先看文件和评论，再决定要问我什么

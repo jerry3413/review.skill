@@ -2,7 +2,7 @@
 
 语言：[English](README.md) | 中文
 
-这个 Codex skill 用于把中文产品/工作表格整理成可决策的输出，适合处理体征表、需求表、竞品分析表、领导/同事评论导出、以及修改后的工作簿。
+这是一个通用 AI Agent 指令包，用于把中文产品/工作表格整理成可决策的输出，适合处理体征表、需求表、竞品分析表、领导/同事评论导出、以及修改后的工作簿。
 
 ## 功能
 
@@ -18,8 +18,6 @@
 ```text
 workbook-decision-review/
 ├── SKILL.md
-├── agents/
-│   └── openai.yaml
 └── references/
     ├── question-gate.md
     ├── output-shapes.md
@@ -29,18 +27,17 @@ workbook-decision-review/
     └── feedback-patterns.md
 ```
 
-`SKILL.md` 保持短小，只负责触发、主流程和硬约束。更细的规则拆到 `references/`，让 Codex 在具体任务中按需读取，避免一次性加载过多上下文。
+`SKILL.md` 保持短小，只负责触发、主流程和硬约束。更细的规则拆到 `references/`，让 Agent 在具体任务中按需读取，避免一次性加载过多上下文。
 
 ## 安装
 
-把这个仓库克隆或复制到你的 Codex skills 目录：
+把这个仓库克隆或复制到任意 Agent 能读取的位置：
 
 ```bash
-mkdir -p ~/.codex/skills
-git clone https://github.com/jerry3413/review.skill.git ~/.codex/skills/workbook-decision-review
+git clone https://github.com/jerry3413/review.skill.git
 ```
 
-安装后重启 Codex，让它重新发现这个 skill。
+对于任何 AI Agent，把 `SKILL.md` 作为入口指令，并允许它按需读取 `references/` 下的文件。如果你的平台有自己的 skill/plugin 目录，把整个文件夹放进去并保持目录结构即可。
 
 ## 使用示例
 

@@ -1,6 +1,6 @@
 ---
 name: workbook-decision-review
-description: Decision-ready workbook review and editing methodology for Chinese product/work reports, especially symptom lists, requirement lists, competitive analysis sheets, leadership comment exports, revised workbooks, and feedback-driven skill evolution. Use when the user sends .xlsx/.csv workbooks or reviewer comments and asks Codex to inspect first, raise necessary questions, optimize a work table, summarize adjustment patterns, preserve source evidence, produce a local workbook, or evolve this skill from post-review modifications.
+description: Decision-ready workbook review and editing methodology for Chinese product/work reports, especially symptom lists, requirement lists, competitive analysis sheets, leadership comment exports, revised workbooks, and feedback-driven skill evolution. Use when the user sends .xlsx/.csv workbooks or reviewer comments and asks the agent to inspect first, raise necessary questions, optimize a work table, summarize adjustment patterns, preserve source evidence, produce a local workbook, or evolve this method from post-review modifications.
 ---
 
 # Workbook Decision Review
